@@ -1,0 +1,2 @@
+cp termux/.* ~
+echo ok
