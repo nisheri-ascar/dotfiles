@@ -1,2 +1,2 @@
-cp termux/.* ~
+cp -r termux/.* ~
 echo ok
