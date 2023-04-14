@@ -78,9 +78,10 @@ function fish_prompt
     and _nim_prompt_wrapper $retc V (basename "$VIRTUAL_ENV")
 
     # git
-    set prompt_git (fish_git_prompt | string trim -c ' ()')
-    test -n "$prompt_git"
-    and _nim_prompt_wrapper $retc G $prompt_git
+    # set prompt_git (fish_git_prompt | string trim -c ' ()')
+    # test -n "$prompt_git"
+    #and _nim_prompt_wrapper $retc G $prompt_git
+    # Above currently causes issues with legacy termux for some reason
 
     # Battery status
     type -q acpi
