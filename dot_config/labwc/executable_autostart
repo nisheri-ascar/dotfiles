@@ -1,0 +1,12 @@
+#!/bin/bash
+
+wlsunset -s 7:00 -s 18:30
+cliphist store &
+pipewire &
+swaybg -m fill -i ~/Pictures/wallpaper/god.png &
+xfce4-panel &
+xfce4-power-manager &
+xfsettingsd &
+# /home/nisherii/.local/bin/Obsidian &
+udisksctl monitor &
+exec /usr/libexec/xfce-polkit
