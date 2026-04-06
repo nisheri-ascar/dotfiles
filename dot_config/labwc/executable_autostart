@@ -1,6 +1,6 @@
 #!/bin/bash
 
-wlsunset -s 7:00 -s 18:30
+wlsunset -S 7:00 -s 18:30 &
 cliphist store &
 pipewire &
 swaybg -m fill -i ~/Pictures/wallpaper/god.png &
