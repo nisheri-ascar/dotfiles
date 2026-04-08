@@ -1,0 +1,9 @@
+#!/bin/bash
+
+wlsunset -S 7:00 -s 18:30 &
+cliphist store &
+pipewire &
+xfsettingsd &
+# /home/nisherii/.local/bin/Obsidian &
+udisksctl monitor &
+exec /usr/libexec/xfce-polkit
