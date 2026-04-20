@@ -3,6 +3,7 @@
 wlsunset -S 7:00 -s 18:30 &
 cliphist store &
 pipewire &
+sleep 1 # maybe fix waybar disappearing audio sometimes
 xfsettingsd &
 # /home/nisherii/.local/bin/Obsidian &
 udisksctl monitor &

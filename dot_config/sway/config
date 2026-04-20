@@ -7,8 +7,8 @@
 
 # stuff i modified
 
-#output * allow_tearing yes
-#output * max_render_time off
+output * allow_tearing yes
+output * max_render_time off
 
 # autostart for programs i need
 exec /home/nisherii/.config/sway/autostart
@@ -82,6 +82,8 @@ input type:touchpad {
 
     # Start your launcher
     bindsym $mod+r exec $menu
+    bindsym $mod+Alt+r exec rofi -show drun # show desktop applications
+    bindsym $mod+Alt+Shift+r exec rofi -show emoji #emoji 
 
     # Drag floating windows by holding down $mod and left mouse button.
     # Resize them with right mouse button + $mod.
