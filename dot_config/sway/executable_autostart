@@ -7,4 +7,5 @@ sleep 1 # maybe fix waybar disappearing audio sometimes
 xfsettingsd &
 # /home/nisherii/.local/bin/Obsidian &
 udisksctl monitor &
-exec /usr/libexec/xfce-polkit
+exec /usr/libexec/xfce-polkit &
+iwgtk -i &
