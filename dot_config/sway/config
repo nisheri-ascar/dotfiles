@@ -61,6 +61,7 @@ input type:touchpad {
 	click_method clickfinger
 	drag enabled
 	drag_lock disabled
+	#dwt disabled
    }
 #
 #   input type:keyboard {
@@ -232,4 +233,8 @@ bar {
     swaybar_command waybar
 }
 
+# apps that needs to float
+for_window [app_id="com.vixalien.sticky"] floating enable
+
+####
 include /etc/sway/config.d/*
