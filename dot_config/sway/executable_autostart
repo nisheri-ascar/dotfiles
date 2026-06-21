@@ -9,4 +9,5 @@ udisksctl monitor &
 exec /usr/libexec/xfce-polkit &
 iwgtk -i &
 # flatpak run com.vixalien.sticky # turn off temporarily for now, make it put itself on upper corner by default
-syncthing & 
+syncthing &
+conky -c ~/.config/conky.conf
