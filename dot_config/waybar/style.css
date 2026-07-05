@@ -41,10 +41,12 @@ window#waybar {
 
 #clock,
 #pulseaudio,
+#backlight,
 #custom-logo,
 #custom-power,
 #custom-spotify,
 #custom-notification,
+#custom-tomat,
 #cpu,
 #tray,
 #memory,
@@ -114,3 +116,14 @@ tooltip {
   background-color: #181825;
   border: 2px solid #89b4fa;
 }
+
+#custom-tomat {
+	color: #f38ba8;
+}
+
+#custom-tomat.work { background-color: #f38ba8; color: #11111b; }
+#custom-tomat.work-paused { background-color: #f5a3ba; color: #11111b; }
+#custom-tomat.break { background-color: #a6e3a1; color: #11111b; }
+#custom-tomat.break-paused { background-color: #bce8b8; color: #11111b; }
+#custom-tomat.long-break { background-color: #89b4fa; color: #11111b; }
+#custom-tomat.long-break-paused { background-color: #a8c7fb; color: #11111b; }
