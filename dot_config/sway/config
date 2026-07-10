@@ -10,8 +10,7 @@
 output * allow_tearing yes
 output * max_render_time off
 
-# autostart for programs i need
-exec /home/nisherii/.config/sway/autostart
+
 
 
 ### Variables
@@ -233,8 +232,34 @@ bar {
     swaybar_command waybar
 }
 
+#######################
 # apps that needs to float
 for_window [app_id="com.vixalien.sticky"] floating enable
+#######################
+
+######################
+# aesthetics
+smart_corner_radius enable
+corner_radius 10
+
+blur enable
+blur_passes 2
+blur_radius 5
+
+shadows enable
+shadow_blur_radius 20
+shadow_color #0000004d
+
+default_dim_inactive 0.1
+default_border pixel 2
+default_floating_border pixel 2
+######################
+
+######################
+# autostart for programs i need
+exec /home/nisherii/.config/sway/autostart
+######################
+
 
 ####
 include /etc/sway/config.d/*
