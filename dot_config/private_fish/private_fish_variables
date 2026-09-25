@@ -1,0 +1,5 @@
+# This file contains fish universal variable definitions.
+# VERSION: 3.0
+SETUVAR --export PYENV_ROOT:/home/nisherii/\x2epyenv
+SETUVAR __fish_initialized:4300
+SETUVAR fish_user_paths:/home/nisherii/\x2epyenv/bin\x1e/home/nisherii/\x2elocal/bin\x1e/home/nisherii/\x2elocal
