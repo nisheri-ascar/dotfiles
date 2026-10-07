@@ -42,10 +42,10 @@ output * bg /home/nisherii/Pictures/wallpaper/god.png fill
 #
 # Example configuration:
 #
-# exec swayidle -w \
-#          timeout 300 'swaylock -f -c 000000' \
-#          timeout 600 'swaymsg "output * power off"' resume 'swaymsg "output * power on"' \
-#          before-sleep 'swaylock -f -c 000000'
+exec swayidle -w \
+          timeout 300 'swaylock -f -c 000000' \
+          timeout 300 'swaymsg "output * power off"' resume 'swaymsg "output * power on"' \
+          before-sleep 'swaylock -f -c 000000'
 #
 # This will lock your screen after 300 seconds of inactivity, then turn off
 # your displays after another 300 seconds, and turn your screens back on when
@@ -231,6 +231,32 @@ bindsym $mod+d mode "resize"
 bar {
     swaybar_command waybar
 }
+
+# wl-kbptr
+
+bindsym $mod+m exec wl-kbptr
+
+
+# --- numpad mouse mode ---
+#bindsym $mod+n mode "mouse"
+
+    # movement (hold to repeat)
+    bindsym KP_8 seat - cursor move 0 -20
+    bindsym KP_2 seat - cursor move 0 20
+    bindsym KP_4 seat - cursor move -20 0
+    bindsym KP_6 seat - cursor move 20 0
+
+    # 0 = right click, 3 = left click (hold either to drag)
+    bindsym --no-repeat KP_3 seat - cursor press button3
+    bindsym --release KP_3 seat - cursor release button3
+    bindsym --no-repeat KP_1 seat - cursor press button1
+    bindsym --release KP_1 seat - cursor release button1
+
+    # 5 = jump with wl-kbptr, then come back to this mode
+    bindsym KP_5 mode "default", exec 'wl-kbptr; swaymsg mode mouse'
+
+    #bindsym Escape mode "default"
+
 
 #######################
 # apps that needs to float
